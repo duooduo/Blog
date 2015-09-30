@@ -1,2 +1,2 @@
-# Blog1
-blog
+# Blog
+Blog静态
