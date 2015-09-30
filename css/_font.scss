@@ -1,0 +1,16 @@
+// public
+$blackBg : #121621;
+$blue : #41B1F5;
+$blueDark : #3A90CD;
+$red : #F5024F;
+$green : #04F5C1;
+$yellow : #F5F004;
+
+// latin -by github ribbon
+@font-face {
+	font-family: 'Cabin Condensed';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Cabin Condensed Medium'), local('CabinCondensed-Medium'), url(fonts/CabinCondensed.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
