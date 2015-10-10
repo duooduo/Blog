@@ -9,7 +9,7 @@ body { overflow-x: hidden;}
 
 // 左侧导航
 .navBox { width: 135px; padding: 150px 10px 0 50px; position: fixed; top: 0; left: 0; bottom: 0; background-color: $blackBg;
-	.birdBox { padding-top: 40px;}
+	.birdBox { padding-top: 200px;}
 	.navBox_logo { display: block; width: 100px; height: 100px; position: relative;
 		img { width: 100%; height: 100%; display: block; border-radius: 50%; transition: box-shadow .5s linear;}
 		h1 { position: absolute; right: -30px; top: -45px; line-height: 40px; color: $blue; opacity: 0; transform: rotate(0deg);}
@@ -29,8 +29,22 @@ body { overflow-x: hidden;}
 	//.birdBox { padding-top: 40px;}
 }
 
-.mainBox { margin: 0 0 0 205px;}
-.listBox {}
+.mainBox { margin: 0 0 0 195px;}
+.listBox {
+	ul { padding: 0 0 30px 30px;}
+	li { float: left; padding: 30px 30px 0 0;
+		a { display: block; width: 450px; height: 360px; background-color: #fff; box-shadow: 3px 5px 5px rgba(200,200,200,0.5);
+			&:hover { box-shadow: 3px 5px 5px rgba(106,137,161,0.5);}
+		}
+		figure { width: 100%; height: 260px;
+			img { display: block; width: 100%; height: 100%;}
+		}
+		.tit { padding: 10px;
+			h3 { line-height: 50px; font-size: 24px; color: $blackBg;}
+			p { line-height: 30px; font-size: 14px; color: $grayDark; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+		}
+	}
+}
 
 
 
@@ -73,3 +87,10 @@ h2 { font-size: 30px; line-height: 1.5; color: $blueDark;}
 @media screen and (max-width:960px){}
 @media screen and (max-width:600px){}
 @media screen and (max-width:420px){}
+// IE9\IE10
+@media screen and (min-width:0\0) {
+/* IE9与IE10的专有代码 */
+}
+.ie8 {
+	div,aside,section,ul,li,a,img { display: none;}
+}

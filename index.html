@@ -7,6 +7,20 @@
 <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"/>
 <link rel="stylesheet" href="css/styles.css"/>
+<!--[if IE 9]>
+<style>
+	.birdBox { display: none;}
+</style>
+<![endif]-->
+<!--[if lte IE 8]>
+<script>
+document.documentElement.className += ' ie8';
+//window.onload = function(){
+//	document.body.innerHTML = '请升级IE浏览器，或使用chrome、firefox浏览器。';
+//};
+</script>
+<![endif]-->
+
 </head>
 <body>
 <!-- aside -->
@@ -18,7 +32,7 @@
 		</a>
 		<ul>
 			<li class="cur"><a href="index.html">首页</a></li>
-			<!--<li><a href="#">分类</a></li>-->
+			<li><a href="exp.html">例子</a></li>
 			<li><a href="#">归档</a></li>
 			<!--<li><a href="#">标签</a></li>-->
 			<li><a href="about.html">关于</a></li>
@@ -34,7 +48,28 @@
 </aside>
 <!-- main -->
 <section class="mainBox">
-	<div class="listBox" style="height: 3000px;"></div>
+	<div class="listBox">
+		<ul class="clearfix">
+			<li><a href="exp.html">
+				<figure><img src="img/temp/img_html5.png" alt=""/></figure>
+				<div class="tit">
+					<h3>例子</h3>
+				</div>
+			</a></li>
+			<li><a href="list.html">
+				<figure><img src="img/temp/img_html5.png" alt=""/></figure>
+				<div class="tit">
+					<h3>归档</h3>
+				</div>
+			</a></li>
+			<li><a href="about.html">
+				<figure><img src="img/temp/img_html5.png" alt=""/></figure>
+				<div class="tit">
+					<h3>关于</h3>
+				</div>
+			</a></li>
+		</ul>
+	</div>
 </section>
 <!-- ribbon css -->
 <div class="ribbon right blue"><a target="_blank" href="https://github.com/duooduo">Fork me on GitHub</a></div>
