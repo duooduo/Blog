@@ -7,18 +7,13 @@
 <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"/>
 <link rel="stylesheet" href="css/styles.css"/>
-<!--[if IE 9]>
-<style>
-	.birdBox { display: none;}
-</style>
+<!--[if lte IE 9]>
+<style>.birdBox { display: none;}</style>
+<script>document.documentElement.className += ' ie9';</script>
 <![endif]-->
 <!--[if lte IE 8]>
-<script>
-document.documentElement.className += ' ie8';
-//window.onload = function(){
-//	document.body.innerHTML = '请升级IE浏览器，或使用chrome、firefox浏览器。';
-//};
-</script>
+<script>document.documentElement.className += ' ie8';</script>
+<script src="js/lib/html5shiv.js"></script>
 <![endif]-->
 
 </head>
@@ -26,15 +21,11 @@ document.documentElement.className += ' ie8';
 <!-- aside -->
 <aside id="topNavBox" class="navBox">
 	<nav>
-		<a class="navBox_logo" href="index.html">
-			<img src="img/face.jpg" alt=""/>
-			<h1>(｡･∀･)ﾉﾞ嗨</h1>
-		</a>
+		<a class="navBox_logo" href="index.html"><img src="img/face.jpg" alt=""/><h1>(｡･∀･)ﾉﾞ嗨</h1></a>
 		<ul>
 			<li class="cur"><a href="index.html">首页</a></li>
 			<li><a href="exp.html">例子</a></li>
-			<li><a href="#">归档</a></li>
-			<!--<li><a href="#">标签</a></li>-->
+			<!--<li><a href="list.html">归档</a></li>-->
 			<li><a href="about.html">关于</a></li>
 		</ul>
 	</nav>
@@ -58,7 +49,11 @@ document.documentElement.className += ' ie8';
 				</div>
 			</a></li>
 			<li><a href="exp/002.html">
-
+				<figure><img src="img/temp/img_html5.png" alt=""/></figure>
+				<div class="tit">
+					<h3>例子002</h3>
+					<p>例子002例子002例子002例子002例子002例子002例子002例子002</p>
+				</div>
 			</a></li>
 		</ul>
 	</div>
@@ -67,6 +62,5 @@ document.documentElement.className += ' ie8';
 <div class="ribbon right blue"><a target="_blank" href="https://github.com/duooduo">Fork me on GitHub</a></div>
 <!-- javascript -->
 <script src="js/lib/zepto.min.js"></script>
-<script src="js/index.js"></script>
 </body>
 </html>
