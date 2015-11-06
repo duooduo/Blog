@@ -8,9 +8,9 @@ body::-webkit-scrollbar-thumb:hover{ height:50px; background-color:#9f9f9f; -web
 body { overflow-x: hidden;}
 
 // 左侧导航
-.navBox { width: 135px; height: 2000px; padding: 150px 10px 0 50px; position: absolute; top: 0; left: 0; bottom: 0; background-color: $blackBg;
+.navBox { width: 170px; height: 2000px; padding: 150px 10px 0 10px; position: absolute; top: 0; left: 0; bottom: 0; background-color: $blackBg;
 	.birdBox { padding-top: 200px;}
-	.navBox_logo { display: block; width: 100px; height: 100px; position: relative;
+	.navBox_logo { display: block; width: 100px; height: 100px; position: relative; margin: 0 auto;
 		img { width: 100%; height: 100%; display: block; border-radius: 50%; transition: box-shadow .5s linear;}
 		h1 { position: absolute; right: -30px; top: -45px; line-height: 40px; color: $blue; opacity: 0; transform: rotate(0deg);}
 		&:hover {
@@ -19,12 +19,15 @@ body { overflow-x: hidden;}
 		}
 	}
 
-	ul { padding: 60px 40px 0 5px;
-		li { line-height: 35px; text-align: center;
+	ul { padding: 60px 0 0;
+		li { line-height: 35px;
 			&.cur a { color: $blue;}
+			a { display: block; color: #777; font-size: 16px; font-weight: 500;  text-align: center;
+				&:hover { /*color: $blue;*/ background: rgba(43, 43, 43, 0.7); transition: all 0s linear}
+			}
+
 		}
-		a { color: #777; font-size: 16px; font-weight: 500;}
-		a:hover { color: $blue;}
+
 	}
 	//.birdBox { padding-top: 40px;}
 }
